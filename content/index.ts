@@ -19,8 +19,15 @@ export function getLocaleContent(locale: Locale): HomeContent {
   return localeContent[locale];
 }
 
-export function getDefaultMethodDemoLanguage(locale: Locale): MethodDemoLanguageId {
-  return locale;
+export function getDefaultMethodDemoLanguage(locale?: string | null): MethodDemoLanguageId {
+  const candidate = locale ?? "";
+  return isSupportedLocale(candidate) ? candidate : "en";
 }
 
-export type { HomeContent, Locale, MethodDemoLanguageId } from "./types";
+export type {
+  HomeContent,
+  Locale,
+  MethodDemoLanguageId,
+  MethodDemoSceneId,
+  MethodDemosContent,
+} from "./types";

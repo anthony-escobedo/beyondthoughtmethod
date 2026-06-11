@@ -1,5 +1,7 @@
 import type { HomeContent } from "@/content";
 
+import { MethodDemoStage } from "./MethodDemoStage";
+
 type HomePageProps = {
   content: HomeContent;
 };
@@ -65,18 +67,7 @@ export function HomePage({ content }: HomePageProps) {
           <p className="methodNote">{content.method.note}</p>
         </section>
 
-        <section className="section" id="demos">
-          <p className="eyebrow">{content.experience.eyebrow}</p>
-          <h2>{content.experience.headline}</h2>
-          <div className="demoGrid">
-            {content.experience.demoCards.map((card) => (
-              <article className="demoCard" key={card.title}>
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
+        <MethodDemoStage content={content.methodDemos} locale={content.locale} />
 
         <section className="section split" id="applications">
           <div>
