@@ -86,35 +86,41 @@ export function MethodDemoStageClient({
         </div>
       </div>
 
-      <div className="demoStage" data-demo-language={activeDemoLanguage}>
-        <div className="demoSceneHeader">
-          <p>{activeScene.order}</p>
-          <div>
-            <h3>{activeScene.title}</h3>
-            <p>{activeScene.description}</p>
+      <div
+        className="demoStage"
+        data-active-scene={activeScene.id}
+        data-demo-language={activeDemoLanguage}
+      >
+        <div className="sceneComposition" key={activeScene.id}>
+          <div className="demoSceneHeader">
+            <p>{activeScene.order}</p>
+            <div>
+              <h3>{activeScene.title}</h3>
+              <p>{activeScene.description}</p>
+            </div>
           </div>
-        </div>
 
-        <div className="inputPanel">
-          <p>{activeScene.inputLabel}</p>
-          <blockquote>{activeScene.input}</blockquote>
-        </div>
+          <div className="inputPanel">
+            <p>{activeScene.inputLabel}</p>
+            <blockquote>{activeScene.input}</blockquote>
+          </div>
 
-        <div className="layerStack" aria-label={activeScene.title}>
-          {activeScene.layers.map((layer) => (
-            <article className="meaningLayer" data-tone={layer.tone} key={layer.label}>
-              <div>
-                <p className="layerLabel">{layer.label}</p>
-                {renderLayerText(layer.text)}
-              </div>
-              {layer.annotation ? <aside>{layer.annotation}</aside> : null}
-            </article>
-          ))}
-        </div>
+          <div className="layerStack" aria-label={activeScene.title}>
+            {activeScene.layers.map((layer) => (
+              <article className="meaningLayer" data-tone={layer.tone} key={layer.label}>
+                <div>
+                  <p className="layerLabel">{layer.label}</p>
+                  {renderLayerText(layer.text)}
+                </div>
+                {layer.annotation ? <aside>{layer.annotation}</aside> : null}
+              </article>
+            ))}
+          </div>
 
-        <div className="movementPanel">
-          <p>{activeScene.movementLabel}</p>
-          <h3>{activeScene.movement}</h3>
+          <div className="movementPanel">
+            <p>{activeScene.movementLabel}</p>
+            <h3>{activeScene.movement}</h3>
+          </div>
         </div>
       </div>
     </section>
