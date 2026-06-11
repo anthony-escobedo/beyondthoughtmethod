@@ -529,36 +529,35 @@ export const enContent: HomeContent = {
     text:
       "It does not decide what is true, force agreement, diagnose, persuade, or replace human judgment.",
   },
-  connectedWork: {
-    eyebrow: "Connected Work",
-    headline: "How the projects relate",
+  ecosystem: {
+    eyebrow: "Connected work",
+    title: "One line of work, three forms",
     intro:
-      "These projects belong to the same inquiry, but they do different work. The relationship is intentionally simple.",
+      "Beyond Thought, Beyond Thought Method, and VIREKA Space are not separate directions. They are different expressions of the same inquiry: how interpretation shapes what we perceive, decide, design, and carry into action.",
     items: [
       {
-        name: "Beyond Thought",
-        role: "source inquiry",
+        id: "beyond-thought",
+        title: "Beyond Thought",
+        label: "The inquiry",
         description:
-          "Asks the source question: what becomes possible when interpretation is seen before it hardens into conclusion?",
+          "An exploration of awareness, interpretation, and how meaning shapes what we build.",
       },
       {
-        name: "Beyond Thought Method",
-        role: "applied framework",
+        id: "beyond-thought-method",
+        title: "Beyond Thought Method",
+        label: "The method",
         description:
-          "Makes the inquiry usable through a practical structure for observation, assumption, uncertainty, influence, and responsible next movement.",
+          "A practical way to examine interpretation before it becomes action.",
       },
       {
-        name: "VIREKA Space",
-        role: "software implementation",
+        id: "vireka-space",
+        title: "VIREKA Space",
+        label: "The practice",
         description:
-          "Applies the method in software, especially where human reflection and AI-aided understanding need clearer boundaries.",
+          "A space where clarified context can support decisions, collaboration, and work with AI.",
       },
     ],
-    futureWork: {
-      eyebrow: "Optional future extension",
-      name: "ANAKARA Space",
-      description:
-        "A future symbolic and pattern-oriented inquiry that may extend the broader exploration beyond the current method and software implementation.",
-    },
+    closing:
+      "Together, they move from inquiry to method to practice without reducing clarity to a product feature.",
   },
 };

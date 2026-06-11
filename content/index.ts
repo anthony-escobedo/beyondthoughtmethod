@@ -26,6 +26,7 @@ export function getDefaultMethodDemoLanguage(locale?: string | null): MethodDemo
 
 export type {
   ApplicationsContent,
+  EcosystemContent,
   HomeContent,
   Locale,
   MethodDemoLanguageId,

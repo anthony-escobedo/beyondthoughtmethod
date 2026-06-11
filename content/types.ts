@@ -21,9 +21,10 @@ export type DemoCard = {
   text: string;
 };
 
-export type ConnectedWork = {
-  name: string;
-  role: string;
+export type EcosystemItem = {
+  id: string;
+  title: string;
+  label: string;
   description: string;
 };
 
@@ -40,12 +41,6 @@ export type NavigationItem = {
 
 export type MethodFrameItem = {
   title: string;
-  description: string;
-};
-
-export type FutureWork = {
-  eyebrow: string;
-  name: string;
   description: string;
 };
 
@@ -108,6 +103,14 @@ export type ApplicationsContent = {
   items: ApplicationNarrative[];
 };
 
+export type EcosystemContent = {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  items: EcosystemItem[];
+  closing: string;
+};
+
 export type HomeContent = {
   locale: Locale;
   seo: SeoContent;
@@ -147,11 +150,5 @@ export type HomeContent = {
     headline: string;
     text: string;
   };
-  connectedWork: {
-    eyebrow: string;
-    headline: string;
-    intro: string;
-    items: ConnectedWork[];
-    futureWork: FutureWork;
-  };
+  ecosystem: EcosystemContent;
 };

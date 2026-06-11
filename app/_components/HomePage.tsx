@@ -72,32 +72,22 @@ export function HomePage({ content }: HomePageProps) {
 
         <ApplicationNarratives content={content.applications} />
 
-        <section className="section quiet">
-          <p className="eyebrow">{content.doesNotDo.eyebrow}</p>
-          <h2>{content.doesNotDo.headline}</h2>
-          <p>{content.doesNotDo.text}</p>
-        </section>
-
-        <section className="section" id="connected-work">
-          <p className="eyebrow">{content.connectedWork.eyebrow}</p>
-          <h2>{content.connectedWork.headline}</h2>
-          <p className="sectionIntro">{content.connectedWork.intro}</p>
+        <section className="section ecosystemSection" id="connected-work">
+          <p className="eyebrow">{content.ecosystem.eyebrow}</p>
+          <h2>{content.ecosystem.title}</h2>
+          <p className="sectionIntro">{content.ecosystem.intro}</p>
           <div className="ecosystemList">
-            {content.connectedWork.items.map((item) => (
-              <article className="ecosystemItem" key={item.name}>
+            {content.ecosystem.items.map((item) => (
+              <article className="ecosystemItem" key={item.id}>
                 <div>
-                  <h3>{item.name}</h3>
-                  <p>{item.role}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.label}</p>
                 </div>
                 <p>{item.description}</p>
               </article>
             ))}
           </div>
-          <aside className="futureNote" aria-label={content.connectedWork.futureWork.eyebrow}>
-            <p className="eyebrow">{content.connectedWork.futureWork.eyebrow}</p>
-            <h3>{content.connectedWork.futureWork.name}</h3>
-            <p>{content.connectedWork.futureWork.description}</p>
-          </aside>
+          <p className="ecosystemClosing">{content.ecosystem.closing}</p>
         </section>
       </main>
     </>

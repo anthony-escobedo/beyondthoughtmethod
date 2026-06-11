@@ -121,36 +121,35 @@ export const esContent: HomeContent = {
       },
     ],
   },
-  connectedWork: {
-    eyebrow: "Connected Work",
-    headline: "How the projects relate",
+  ecosystem: {
+    eyebrow: "Trabajo conectado",
+    title: "Una misma línea de trabajo, tres formas",
     intro:
-      "These projects belong to the same inquiry, but they do different work. The relationship is intentionally simple.",
+      "Beyond Thought, Beyond Thought Method y VIREKA Space no son direcciones separadas. Son expresiones distintas de una misma indagación: cómo la interpretación influye en lo que percibimos, decidimos, diseñamos y llevamos a la acción.",
     items: [
       {
-        name: "Beyond Thought",
-        role: "source inquiry",
+        id: "beyond-thought",
+        title: "Beyond Thought",
+        label: "La indagación",
         description:
-          "Asks the source question: what becomes possible when interpretation is seen before it hardens into conclusion?",
+          "Una exploración de la conciencia, la interpretación y la manera en que el significado influye en lo que construimos.",
       },
       {
-        name: "Beyond Thought Method",
-        role: "applied framework",
+        id: "beyond-thought-method",
+        title: "Beyond Thought Method",
+        label: "El método",
         description:
-          "Makes the inquiry usable through a practical structure for observation, assumption, uncertainty, influence, and responsible next movement.",
+          "Una forma práctica de examinar la interpretación antes de que se convierta en acción.",
       },
       {
-        name: "VIREKA Space",
-        role: "software implementation",
+        id: "vireka-space",
+        title: "VIREKA Space",
+        label: "La práctica",
         description:
-          "Applies the method in software, especially where human reflection and AI-aided understanding need clearer boundaries.",
+          "Un espacio donde el contexto aclarado puede apoyar decisiones, colaboración y trabajo con IA.",
       },
     ],
-    futureWork: {
-      eyebrow: "Optional future extension",
-      name: "ANAKARA Space",
-      description:
-        "A future symbolic and pattern-oriented inquiry that may extend the broader exploration beyond the current method and software implementation.",
-    },
+    closing:
+      "Juntos, avanzan de la indagación al método y luego a la práctica, sin reducir la claridad a una función de producto.",
   },
 };
