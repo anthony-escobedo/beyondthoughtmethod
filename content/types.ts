@@ -24,6 +24,7 @@ export type DemoCard = {
 export type ConnectedWork = {
   name: string;
   role: string;
+  description: string;
 };
 
 export type CallToAction = {
@@ -37,11 +38,23 @@ export type NavigationItem = {
   external?: boolean;
 };
 
+export type MethodFrameItem = {
+  title: string;
+  description: string;
+};
+
+export type FutureWork = {
+  eyebrow: string;
+  name: string;
+  description: string;
+};
+
 export type HomeContent = {
   locale: Locale;
   seo: SeoContent;
   navigation: {
     label: string;
+    homeLabel: string;
     items: NavigationItem[];
   };
   hero: {
@@ -54,12 +67,14 @@ export type HomeContent = {
   problem: {
     eyebrow: string;
     headline: string;
-    text: string;
+    paragraphs: string[];
   };
   method: {
     eyebrow: string;
     headline: string;
-    clarityFrame: string[];
+    intro: string;
+    clarityFrame: MethodFrameItem[];
+    note: string;
   };
   experience: {
     eyebrow: string;
@@ -79,6 +94,8 @@ export type HomeContent = {
   connectedWork: {
     eyebrow: string;
     headline: string;
+    intro: string;
     items: ConnectedWork[];
+    futureWork: FutureWork;
   };
 };

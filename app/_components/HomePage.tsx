@@ -9,7 +9,7 @@ export function HomePage({ content }: HomePageProps) {
     <>
       <header className="siteHeader">
         <a className="siteMark" href="/">
-          Beyond Thought Method
+          {content.navigation.homeLabel}
         </a>
         <nav aria-label={content.navigation.label} className="siteNav">
           {content.navigation.items.map((item) => (
@@ -42,20 +42,27 @@ export function HomePage({ content }: HomePageProps) {
         <section className="section">
           <p className="eyebrow">{content.problem.eyebrow}</p>
           <h2>{content.problem.headline}</h2>
-          <p>{content.problem.text}</p>
+          <div className="textStack">
+            {content.problem.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
         </section>
 
         <section className="section" id="method">
           <p className="eyebrow">{content.method.eyebrow}</p>
           <h2>{content.method.headline}</h2>
+          <p className="sectionIntro">{content.method.intro}</p>
           <div className="frameGrid">
             {content.method.clarityFrame.map((item, index) => (
-              <article className="frameCard" key={item}>
+              <article className="frameCard" key={item.title}>
                 <span>{String(index + 1).padStart(2, "0")}</span>
-                <h3>{item}</h3>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
               </article>
             ))}
           </div>
+          <p className="methodNote">{content.method.note}</p>
         </section>
 
         <section className="section" id="demos">
@@ -92,14 +99,23 @@ export function HomePage({ content }: HomePageProps) {
         <section className="section" id="connected-work">
           <p className="eyebrow">{content.connectedWork.eyebrow}</p>
           <h2>{content.connectedWork.headline}</h2>
-          <div className="connectedGrid">
+          <p className="sectionIntro">{content.connectedWork.intro}</p>
+          <div className="ecosystemList">
             {content.connectedWork.items.map((item) => (
-              <article className="connectedCard" key={item.name}>
-                <h3>{item.name}</h3>
-                <p>{item.role}</p>
+              <article className="ecosystemItem" key={item.name}>
+                <div>
+                  <h3>{item.name}</h3>
+                  <p>{item.role}</p>
+                </div>
+                <p>{item.description}</p>
               </article>
             ))}
           </div>
+          <aside className="futureNote" aria-label={content.connectedWork.futureWork.eyebrow}>
+            <p className="eyebrow">{content.connectedWork.futureWork.eyebrow}</p>
+            <h3>{content.connectedWork.futureWork.name}</h3>
+            <p>{content.connectedWork.futureWork.description}</p>
+          </aside>
         </section>
       </main>
     </>
