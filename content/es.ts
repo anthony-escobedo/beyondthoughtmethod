@@ -69,6 +69,58 @@ export const esContent: HomeContent = {
       "Elige una escena y cambia el idioma del demo para comparar la misma estructura.",
     languageSelectorLabel: "Idioma del demo",
   },
+  applications: {
+    eyebrow: "Aplicaciones",
+    title: "Dónde puede ayudar el marco",
+    items: [
+      {
+        id: "education",
+        label: "Educación",
+        narrative:
+          "El aprendizaje se vuelve más claro cuando los estudiantes pueden distinguir lo que se observa, lo que se supone y lo que sigue siendo incierto. El método ayuda a hacer visible esa distinción antes de que las conclusiones queden fijadas.",
+        supportingText:
+          "La claridad ayuda a que el razonamiento sea más fácil de ver, cuestionar y conversar.",
+      },
+      {
+        id: "ai-prompts",
+        label: "Prompts de IA",
+        narrative:
+          "La IA no recibe solo una solicitud; también recibe el marco que esa solicitud lleva consigo. Cuando la observación, la interpretación y la incertidumbre están más claras, es menos probable que la IA incorpore una suposición no examinada en su respuesta.",
+        supportingText: "Los mejores prompts suelen comenzar con un contexto más claro.",
+      },
+      {
+        id: "teams",
+        label: "Equipos",
+        narrative:
+          "Los grupos a menudo tienen dificultades porque las personas responden a significados distintos dentro de la misma situación. El método ayuda a hacer visibles las suposiciones para que el grupo pueda ver qué se comparte, qué difiere y qué sigue sin resolverse.",
+        supportingText:
+          "La claridad compartida mejora cuando las suposiciones se vuelven visibles.",
+      },
+      {
+        id: "communication",
+        label: "Comunicación",
+        narrative:
+          "Las conversaciones pueden volverse reactivas cuando las conclusiones llegan antes que el contexto. Distinguir la observación de la interpretación crea más espacio para la comprensión.",
+        supportingText: "La claridad puede reducir escaladas innecesarias.",
+      },
+      {
+        id: "decisions",
+        label: "Decisiones",
+        narrative:
+          "Muchas decisiones están influenciadas por suposiciones que parecen hechos establecidos. El método ayuda a distinguir entre lo que está fundamentado y lo que sigue siendo incierto.",
+        supportingText:
+          "La incertidumbre visible suele mejorar la calidad de las decisiones.",
+      },
+      {
+        id: "facilitation",
+        label: "Facilitación",
+        narrative:
+          "La facilitación puede ayudar a un grupo a desacelerar lo suficiente para ver qué se sabe, qué se está suponiendo y qué todavía necesita atención. El método le da una estructura más clara a esa pausa.",
+        supportingText:
+          "Un marco más claro puede favorecer un diálogo más productivo.",
+      },
+    ],
+  },
   connectedWork: {
     eyebrow: "Connected Work",
     headline: "How the projects relate",

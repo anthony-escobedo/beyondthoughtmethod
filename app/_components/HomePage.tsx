@@ -1,5 +1,6 @@
 import type { HomeContent } from "@/content";
 
+import { ApplicationNarratives } from "./ApplicationNarratives";
 import { MethodDemoStage } from "./MethodDemoStage";
 
 type HomePageProps = {
@@ -69,17 +70,7 @@ export function HomePage({ content }: HomePageProps) {
 
         <MethodDemoStage content={content.methodDemos} locale={content.locale} />
 
-        <section className="section split" id="applications">
-          <div>
-            <p className="eyebrow">{content.applications.eyebrow}</p>
-            <h2>{content.applications.headline}</h2>
-          </div>
-          <ul className="pillList">
-            {content.applications.items.map((application) => (
-              <li key={application}>{application}</li>
-            ))}
-          </ul>
-        </section>
+        <ApplicationNarratives content={content.applications} />
 
         <section className="section quiet">
           <p className="eyebrow">{content.doesNotDo.eyebrow}</p>

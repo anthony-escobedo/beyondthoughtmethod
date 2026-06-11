@@ -476,14 +476,51 @@ export const enContent: HomeContent = {
   },
   applications: {
     eyebrow: "Applications",
-    headline: "Where the framework can help",
+    title: "Where the framework can help",
     items: [
-      "Education",
-      "AI prompts",
-      "Teams",
-      "Communication",
-      "Decisions",
-      "Facilitation",
+      {
+        id: "education",
+        label: "Education",
+        narrative:
+          "Learning becomes clearer when students can distinguish what is observed, what is assumed, and what remains uncertain. The method helps make that distinction visible before conclusions become fixed.",
+        supportingText:
+          "Clarity helps reasoning become easier to see, question, and discuss.",
+      },
+      {
+        id: "ai-prompts",
+        label: "AI prompts",
+        narrative:
+          "AI does not only receive a request; it receives the frame carried by that request. When observation, interpretation, and uncertainty are clearer, AI is less likely to carry an unexamined assumption into its response.",
+        supportingText: "Better prompts often begin with clearer context.",
+      },
+      {
+        id: "teams",
+        label: "Teams",
+        narrative:
+          "Groups often struggle because people respond to different meanings inside the same situation. The method helps make assumptions visible so the group can see what is shared, what differs, and what remains unresolved.",
+        supportingText: "Shared clarity improves when assumptions become visible.",
+      },
+      {
+        id: "communication",
+        label: "Communication",
+        narrative:
+          "Conversations can become reactive when conclusions arrive before context. Distinguishing observation from interpretation creates more room for understanding.",
+        supportingText: "Clarity can reduce unnecessary escalation.",
+      },
+      {
+        id: "decisions",
+        label: "Decisions",
+        narrative:
+          "Many decisions are shaped by assumptions that appear factual. The method helps distinguish what is established from what remains uncertain.",
+        supportingText: "Visible uncertainty often improves decision quality.",
+      },
+      {
+        id: "facilitation",
+        label: "Facilitation",
+        narrative:
+          "Facilitation can help a group slow down enough to see what is known, what is being assumed, and what still needs attention. The method gives that pause a clearer structure.",
+        supportingText: "A clearer frame can support more productive dialogue.",
+      },
     ],
   },
   doesNotDo: {

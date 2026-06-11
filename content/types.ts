@@ -94,6 +94,20 @@ export type MethodDemosContent = {
   scenesByLanguage: Record<MethodDemoLanguageId, MethodDemoScene[]>;
 };
 
+export type ApplicationNarrative = {
+  id: string;
+  label: string;
+  narrative: string;
+  supportingText: string;
+};
+
+export type ApplicationsContent = {
+  eyebrow: string;
+  title: string;
+  intro?: string;
+  items: ApplicationNarrative[];
+};
+
 export type HomeContent = {
   locale: Locale;
   seo: SeoContent;
@@ -127,11 +141,7 @@ export type HomeContent = {
     headline: string;
     demoCards: DemoCard[];
   };
-  applications: {
-    eyebrow: string;
-    headline: string;
-    items: string[];
-  };
+  applications: ApplicationsContent;
   doesNotDo: {
     eyebrow: string;
     headline: string;
