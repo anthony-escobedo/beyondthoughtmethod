@@ -13,6 +13,32 @@ export const enContent: HomeContent = {
     locale: "en_US",
     languageTag: "en",
   },
+  navigation: {
+    label: "Page navigation",
+    items: [
+      {
+        label: "Method",
+        href: "#method",
+      },
+      {
+        label: "Demos",
+        href: "#demos",
+      },
+      {
+        label: "Applications",
+        href: "#applications",
+      },
+      {
+        label: "Connected Work",
+        href: "#connected-work",
+      },
+      {
+        label: "VIREKA Space",
+        href: "https://vireka.space",
+        external: true,
+      },
+    ],
+  },
   hero: {
     eyebrow: "Beyond Thought Method",
     headline: "Pre-Interpretive Infrastructure for Human and AI-Aided Understanding",
@@ -21,11 +47,11 @@ export const enContent: HomeContent = {
     ctasLabel: "Primary links",
     ctas: [
       {
-        label: "Explore VIREKA Space",
+        label: "→ Explore VIREKA Space",
         href: "https://vireka.space",
       },
       {
-        label: "Read the source inquiry",
+        label: "→ Read the source inquiry",
         href: "https://vireka.space/beyond-thought",
       },
     ],

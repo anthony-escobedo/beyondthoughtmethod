@@ -31,9 +31,19 @@ export type CallToAction = {
   href: string;
 };
 
+export type NavigationItem = {
+  label: string;
+  href: string;
+  external?: boolean;
+};
+
 export type HomeContent = {
   locale: Locale;
   seo: SeoContent;
+  navigation: {
+    label: string;
+    items: NavigationItem[];
+  };
   hero: {
     eyebrow: string;
     headline: string;
