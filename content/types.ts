@@ -123,6 +123,7 @@ export type HomeContent = {
     eyebrow: string;
     headline: string;
     subheadline: string;
+    supportingLine: string;
     ctasLabel: string;
     ctas: CallToAction[];
   };

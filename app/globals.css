@@ -128,8 +128,15 @@ h3 {
 }
 
 .heroText {
-  color: var(--muted);
+  color: var(--text);
   font-size: clamp(1.15rem, 2vw, 1.45rem);
+  max-width: 700px;
+}
+
+.heroSupport {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.55vw, 1.18rem);
+  margin-top: -12px;
   max-width: 760px;
 }
 

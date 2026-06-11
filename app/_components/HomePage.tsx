@@ -33,6 +33,7 @@ export function HomePage({ content }: HomePageProps) {
           <p className="eyebrow">{content.hero.eyebrow}</p>
           <h1>{content.hero.headline}</h1>
           <p className="heroText">{content.hero.subheadline}</p>
+          <p className="heroSupport">{content.hero.supportingLine}</p>
           <div className="heroActions" aria-label={content.hero.ctasLabel}>
             {content.hero.ctas.map((cta) => (
               <a className="spatialLink" href={cta.href} key={cta.href}>

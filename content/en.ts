@@ -42,9 +42,10 @@ export const enContent: HomeContent = {
   },
   hero: {
     eyebrow: "Beyond Thought Method",
-    headline: "Pre-Interpretive Infrastructure for Human and AI-Aided Understanding",
-    subheadline:
-      "The Beyond Thought Method helps distinguish observation, assumption, uncertainty, influence, and responsible next movement before interpretation hardens into conclusion.",
+    headline: "Pre-Interpretive Infrastructure",
+    subheadline: "A method for examining interpretation before it becomes action.",
+    supportingLine:
+      "It helps distinguish what is observed, what is assumed, and what remains uncertain before understanding moves into decisions, collaboration, or AI.",
     ctasLabel: "Primary links",
     ctas: [
       {

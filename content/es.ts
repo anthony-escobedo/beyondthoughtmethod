@@ -1,24 +1,31 @@
 import { enContent } from "./en";
 import type { HomeContent } from "./types";
 
-// Placeholder-equivalent content for the locale route. Full Spanish localization
-// can replace these values without changing route or rendering code.
 export const esContent: HomeContent = {
   ...enContent,
   locale: "es",
   seo: {
-    title: "Beyond Thought Method | Infraestructura preinterpretativa (placeholder ES)",
+    title: "Beyond Thought Method | Infraestructura preinterpretativa",
     description:
-      "Ruta en español con contenido equivalente provisional para el marco Beyond Thought Method; la localización final queda pendiente.",
-    ogTitle: "Beyond Thought Method | Infraestructura preinterpretativa (placeholder ES)",
+      "Un método para examinar la interpretación antes de que se convierta en acción.",
+    ogTitle: "Beyond Thought Method | Infraestructura preinterpretativa",
     ogDescription:
-      "Ruta en español con contenido equivalente provisional para el marco Beyond Thought Method; la localización final queda pendiente.",
+      "Ayuda a distinguir lo que se observa, lo que se supone y lo que sigue siendo incierto antes de que la comprensión pase a decisiones, colaboración o IA.",
     canonicalPath: "/es",
     locale: "es",
     languageTag: "es",
   },
   navigation: {
     ...enContent.navigation,
+  },
+  hero: {
+    ...enContent.hero,
+    eyebrow: "Beyond Thought Method",
+    headline: "Infraestructura preinterpretativa",
+    subheadline:
+      "Un método para examinar la interpretación antes de que se convierta en acción.",
+    supportingLine:
+      "Ayuda a distinguir lo que se observa, lo que se supone y lo que sigue siendo incierto antes de que la comprensión pase a decisiones, colaboración o IA.",
   },
   problem: {
     eyebrow: "The Problem",
