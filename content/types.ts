@@ -1,5 +1,21 @@
 export type Locale = "en" | "es" | "pt-br";
 
+export type SeoLocale = "en_US" | "es" | "pt_BR";
+
+export type LanguageTag = "en" | "es" | "pt-BR";
+
+export type CanonicalPath = "/" | "/es" | "/pt-br";
+
+export type SeoContent = {
+  title: string;
+  description: string;
+  ogTitle: string;
+  ogDescription: string;
+  canonicalPath: CanonicalPath;
+  locale: SeoLocale;
+  languageTag: LanguageTag;
+};
+
 export type DemoCard = {
   title: string;
   text: string;
@@ -17,6 +33,7 @@ export type CallToAction = {
 
 export type HomeContent = {
   locale: Locale;
+  seo: SeoContent;
   hero: {
     eyebrow: string;
     headline: string;

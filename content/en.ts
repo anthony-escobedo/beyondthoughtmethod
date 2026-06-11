@@ -2,6 +2,17 @@ import type { HomeContent } from "./types";
 
 export const enContent: HomeContent = {
   locale: "en",
+  seo: {
+    title: "Beyond Thought Method | Pre-Interpretive Infrastructure",
+    description:
+      "A practical framework for distinguishing observation, assumption, uncertainty, influence, and responsible next movement before interpretation becomes conclusion.",
+    ogTitle: "Beyond Thought Method | Pre-Interpretive Infrastructure",
+    ogDescription:
+      "A practical framework for distinguishing observation, assumption, uncertainty, influence, and responsible next movement before interpretation becomes conclusion.",
+    canonicalPath: "/",
+    locale: "en_US",
+    languageTag: "en",
+  },
   hero: {
     eyebrow: "Beyond Thought Method",
     headline: "Pre-Interpretive Infrastructure for Human and AI-Aided Understanding",
