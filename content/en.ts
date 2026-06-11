@@ -165,12 +165,12 @@ export const enContent: HomeContent = {
           title: "AI Prompt Transformation",
           shortTitle: "AI Prompt",
           description:
-            "See how a prompt changes when uncertainty is preserved before asking AI to generate action.",
-          inputLabel: "Assumption-led prompt",
+            "See how AI receives a frame before it generates action, and how preserving uncertainty changes the request.",
+          inputLabel: "Initial prompt frame",
           input: "My team ignored my proposal. Write an email confronting them.",
           layers: [
             {
-              label: "Original prompt",
+              label: "Assumption-led prompt",
               text: "My team ignored my proposal. Write an email confronting them.",
               tone: "assumption",
               annotation: "Intent is already concluded.",
@@ -199,7 +199,8 @@ export const enContent: HomeContent = {
             },
           ],
           movementLabel: "Responsible next movement",
-          movement: "Give AI a clearer frame before asking it to generate action.",
+          movement:
+            "Give AI context that separates observation, feeling, and uncertainty before asking for action.",
         },
         {
           id: "observation-vs-assumption",
@@ -275,12 +276,12 @@ export const enContent: HomeContent = {
           title: "Transformación de prompt para IA",
           shortTitle: "Prompt IA",
           description:
-            "Observa cómo cambia un prompt cuando la incertidumbre permanece visible antes de pedirle a la IA que genere una acción.",
-          inputLabel: "Prompt guiado por suposición",
+            "Observa cómo la IA recibe un marco antes de generar una acción, y cómo preservar la incertidumbre cambia la solicitud.",
+          inputLabel: "Marco inicial del prompt",
           input: "Mi equipo ignoró mi propuesta. Escribe un correo para confrontarlos.",
           layers: [
             {
-              label: "Prompt original",
+              label: "Prompt guiado por suposición",
               text: "Mi equipo ignoró mi propuesta. Escribe un correo para confrontarlos.",
               tone: "assumption",
               annotation: "La intención ya está concluida.",
@@ -309,7 +310,8 @@ export const enContent: HomeContent = {
             },
           ],
           movementLabel: "Próximo movimiento responsable",
-          movement: "Dar a la IA un marco más claro antes de pedirle que genere una acción.",
+          movement:
+            "Dar a la IA un contexto que separe observación, sensación e incertidumbre antes de pedir una acción.",
         },
         {
           id: "observation-vs-assumption",
@@ -385,12 +387,12 @@ export const enContent: HomeContent = {
           title: "Transformação de prompt para IA",
           shortTitle: "Prompt IA",
           description:
-            "Veja como um prompt muda quando a incerteza permanece visível antes de pedir que a IA gere uma ação.",
-          inputLabel: "Prompt guiado por suposição",
+            "Veja como a IA recebe um quadro antes de gerar uma ação, e como preservar a incerteza muda a solicitação.",
+          inputLabel: "Quadro inicial do prompt",
           input: "Minha equipe ignorou minha proposta. Escreva um e-mail para confrontá-los.",
           layers: [
             {
-              label: "Prompt original",
+              label: "Prompt guiado por suposição",
               text: "Minha equipe ignorou minha proposta. Escreva um e-mail para confrontá-los.",
               tone: "assumption",
               annotation: "A intenção já está concluída.",
@@ -419,7 +421,8 @@ export const enContent: HomeContent = {
             },
           ],
           movementLabel: "Próximo movimento responsável",
-          movement: "Dar à IA um quadro mais claro antes de pedir que ela gere uma ação.",
+          movement:
+            "Dar à IA um contexto que separe observação, sensação e incerteza antes de pedir uma ação.",
         },
         {
           id: "observation-vs-assumption",
