@@ -49,6 +49,51 @@ export type FutureWork = {
   description: string;
 };
 
+export type MethodDemoLanguageId = "en" | "es" | "pt-br";
+
+export type MethodDemoSceneId =
+  | "interpretation-shift"
+  | "ai-prompt-transformation"
+  | "observation-vs-assumption";
+
+export type MethodDemoLayerTone = "observed" | "assumption" | "unclear" | "movement";
+
+export type MethodDemoLanguage = {
+  id: MethodDemoLanguageId;
+  label: string;
+  shortLabel: string;
+};
+
+export type MethodDemoLayer = {
+  label: string;
+  text: string | string[];
+  tone: MethodDemoLayerTone;
+  annotation?: string;
+};
+
+export type MethodDemoScene = {
+  id: MethodDemoSceneId;
+  order: string;
+  title: string;
+  shortTitle: string;
+  description: string;
+  inputLabel: string;
+  input: string;
+  layers: MethodDemoLayer[];
+  movementLabel: string;
+  movement: string;
+};
+
+export type MethodDemosContent = {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  interactionHint: string;
+  languageSelectorLabel: string;
+  languages: MethodDemoLanguage[];
+  scenesByLanguage: Record<MethodDemoLanguageId, MethodDemoScene[]>;
+};
+
 export type HomeContent = {
   locale: Locale;
   seo: SeoContent;
@@ -76,6 +121,7 @@ export type HomeContent = {
     clarityFrame: MethodFrameItem[];
     note: string;
   };
+  methodDemos: MethodDemosContent;
   experience: {
     eyebrow: string;
     headline: string;

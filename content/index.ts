@@ -1,7 +1,7 @@
 import { enContent } from "./en";
 import { esContent } from "./es";
 import { ptBrContent } from "./pt-br";
-import type { HomeContent, Locale } from "./types";
+import type { HomeContent, Locale, MethodDemoLanguageId } from "./types";
 
 const localeContent: Record<Locale, HomeContent> = {
   en: enContent,
@@ -19,4 +19,8 @@ export function getLocaleContent(locale: Locale): HomeContent {
   return localeContent[locale];
 }
 
-export type { HomeContent, Locale } from "./types";
+export function getDefaultMethodDemoLanguage(locale: Locale): MethodDemoLanguageId {
+  return locale;
+}
+
+export type { HomeContent, Locale, MethodDemoLanguageId } from "./types";

@@ -60,6 +60,16 @@ export const ptBrContent: HomeContent = {
     note:
       "The frame is meant to slow conclusion just enough for observation, assumption, uncertainty, influence, and responsible movement to be seen together.",
   },
+  methodDemos: {
+    ...enContent.methodDemos,
+    eyebrow: "Demos do método",
+    title: "Uma frase se torna uma estrutura.",
+    intro:
+      "Estes exemplos estáticos mostram como o mesmo método pode separar uma frase inicial em observação, suposição, incerteza e próximo movimento responsável.",
+    interactionHint:
+      "Escolha uma cena e altere o idioma do demo para comparar a mesma estrutura.",
+    languageSelectorLabel: "Idioma do demo",
+  },
   connectedWork: {
     eyebrow: "Connected Work",
     headline: "How the projects relate",
