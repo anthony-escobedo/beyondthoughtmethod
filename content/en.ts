@@ -361,7 +361,7 @@ export const enContent: HomeContent = {
               tone: "observed",
             },
             {
-              label: "Possíveis suposições",
+              label: "O que pode estar sendo presumido",
               text: [
                 "Eles me excluíram intencionalmente.",
                 "Eles não valorizam minha participação.",
@@ -380,13 +380,13 @@ export const enContent: HomeContent = {
             },
           ],
           movementLabel: "Próximo movimento responsável",
-          movement: "Buscar mais contexto antes de concluir intenção.",
+          movement: "Buscar mais contexto antes de concluir que houve intenção.",
         },
         {
           id: "ai-prompt-transformation",
           order: "02",
           title: "Transformação de prompt para IA",
-          shortTitle: "Prompt IA",
+          shortTitle: "Prompt de IA",
           description:
             "Veja como a IA recebe um quadro antes de gerar uma ação, e como preservar a incerteza muda a solicitação.",
           inputLabel: "Quadro inicial do prompt",

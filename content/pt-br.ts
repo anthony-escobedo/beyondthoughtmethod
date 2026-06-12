@@ -17,6 +17,30 @@ export const ptBrContent: HomeContent = {
   },
   navigation: {
     ...enContent.navigation,
+    label: "Navegação da página",
+    items: [
+      {
+        label: "Método",
+        href: "#method",
+      },
+      {
+        label: "Demos",
+        href: "#demos",
+      },
+      {
+        label: "Usos",
+        href: "#applications",
+      },
+      {
+        label: "Trabalho conectado",
+        href: "#connected-work",
+      },
+      {
+        label: "VIREKA Space",
+        href: "https://vireka.space",
+        external: true,
+      },
+    ],
   },
   hero: {
     ...enContent.hero,
@@ -25,59 +49,74 @@ export const ptBrContent: HomeContent = {
     subheadline: "Um método para examinar a interpretação antes que ela se torne ação.",
     supportingLine:
       "Ajuda a distinguir o que é observado, o que é suposto e o que permanece incerto antes que a compreensão passe para decisões, colaboração ou IA.",
+    ctas: [
+      {
+        label: "→ Explorar VIREKA Space",
+        href: "https://vireka.space",
+      },
+      {
+        label: "→ Ler a investigação de base",
+        href: "https://vireka.space/beyond-thought",
+      },
+    ],
   },
   problem: {
-    eyebrow: "The Problem",
-    headline: "Interpretation often happens before we notice it.",
+    eyebrow: "O PROBLEMA",
+    headline: "A interpretação muitas vezes acontece antes que a gente perceba.",
     paragraphs: [
-      "Decisions, messages, AI prompts, team conclusions, and judgments often begin from a frame that has already formed.",
-      "A moment becomes a story. A signal becomes a motive. A gap becomes a conclusion. Assumptions can become embedded before they have been examined.",
-      "The method helps make that frame visible before interpretation becomes action, so people and AI systems can work with clearer distinctions.",
+      "Decisões, mensagens, prompts de IA, conclusões de equipe e julgamentos muitas vezes começam a partir de um enquadramento que já se formou.",
+      "Um momento vira uma história. Um sinal vira um motivo. Uma lacuna vira uma conclusão. Suposições podem se incorporar antes de serem examinadas.",
+      "O método ajuda a tornar esse enquadramento visível antes que a interpretação se torne ação, para que pessoas e sistemas de IA possam trabalhar com distinções mais claras.",
     ],
   },
   method: {
-    eyebrow: "The Method",
-    headline: "Five-part clarity frame",
+    eyebrow: "O MÉTODO",
+    headline: "Estrutura de clareza em cinco partes",
     intro:
-      "The Beyond Thought Method does not remove interpretation. It gives interpretation a visible structure, so uncertainty can remain present instead of being prematurely resolved.",
+      "O Beyond Thought Method não remove a interpretação. Ele dá uma estrutura visível à interpretação, para que a incerteza possa permanecer presente em vez de ser resolvida prematuramente.",
     clarityFrame: [
       {
-        title: "What is observed",
-        description: "Name what is directly available before adding motive, meaning, or conclusion.",
+        title: "O que é observado",
+        description:
+          "Nomeie o que está diretamente disponível antes de acrescentar motivo, significado ou conclusão.",
       },
       {
-        title: "What may be assumed",
-        description: "Separate possible interpretations from what the situation itself has established.",
+        title: "O que pode estar sendo presumido",
+        description:
+          "Separe possíveis interpretações daquilo que a própria situação já estabeleceu.",
       },
       {
-        title: "What remains unclear",
-        description: "Keep open questions visible instead of filling them with a convenient answer.",
+        title: "O que permanece incerto",
+        description:
+          "Mantenha perguntas abertas visíveis em vez de preenchê-las com uma resposta conveniente.",
       },
       {
-        title: "What may be influencing the frame",
-        description: "Notice context, pressure, emotion, habit, or system constraints that may shape interpretation.",
+        title: "O que pode estar influenciando o enquadramento",
+        description:
+          "Observe contexto, pressão, emoção, hábito ou restrições do sistema que possam moldar a interpretação.",
       },
       {
-        title: "What can responsibly move forward",
-        description: "Choose a next movement that fits what is known while respecting what is still uncertain.",
+        title: "O que pode seguir com responsabilidade",
+        description:
+          "Escolha um próximo movimento que corresponda ao que se sabe, respeitando o que ainda permanece incerto.",
       },
     ],
     note:
-      "The frame is meant to slow conclusion just enough for observation, assumption, uncertainty, influence, and responsible movement to be seen together.",
+      "A estrutura desacelera a conclusão o suficiente para que observação, interpretação presumida, incerteza, influência e movimento responsável possam ser vistos juntos.",
   },
   methodDemos: {
     ...enContent.methodDemos,
-    eyebrow: "Demos do método",
+    eyebrow: "DEMOS DO MÉTODO",
     title: "Uma frase se torna uma estrutura.",
     intro:
-      "Estes exemplos estáticos mostram como o mesmo método pode separar uma frase inicial em observação, suposição, incerteza e próximo movimento responsável.",
+      "Estes exemplos estáticos mostram como o mesmo método pode separar uma frase inicial em observação, interpretação presumida, incerteza e próximo movimento responsável.",
     interactionHint:
       "Escolha uma cena e altere o idioma do demo para comparar a mesma estrutura.",
     languageSelectorLabel: "Idioma do demo",
   },
   applications: {
-    eyebrow: "Aplicações",
-    title: "Onde o framework pode ajudar",
+    eyebrow: "USOS",
+    title: "Onde o método pode ajudar",
     items: [
       {
         id: "education",
@@ -129,10 +168,10 @@ export const ptBrContent: HomeContent = {
     ],
   },
   ecosystem: {
-    eyebrow: "Trabalho conectado",
+    eyebrow: "TRABALHO CONECTADO",
     title: "Uma mesma linha de trabalho, três formas",
     intro:
-      "Beyond Thought, Beyond Thought Method e VIREKA Space não são direções separadas. São expressões diferentes da mesma investigação: como a interpretação influencia o que percebemos, decidimos, desenhamos e levamos à ação.",
+      "Beyond Thought, Beyond Thought Method e VIREKA Space não são direções separadas. São expressões diferentes da mesma investigação: como a interpretação influencia o que percebemos, decidimos, desenhamos e colocamos em ação.",
     items: [
       {
         id: "beyond-thought",

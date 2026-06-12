@@ -37,7 +37,7 @@ export function MethodDemoStageClient({
     useState<MethodDemoLanguageId>(safeInitialLanguage);
 
   const activeScenes = content.scenesByLanguage[activeDemoLanguage] ?? content.scenesByLanguage.en;
-  const sceneMenu = content.scenesByLanguage.en;
+  const sceneMenu = activeScenes;
   const activeScene = useMemo(
     () =>
       activeScenes.find((scene) => scene.id === activeSceneId) ??
