@@ -250,7 +250,7 @@ export const enContent: HomeContent = {
               tone: "observed",
             },
             {
-              label: "Posibles suposiciones",
+              label: "Lo que puede estar siendo supuesto",
               text: [
                 "Me excluyeron intencionalmente.",
                 "No valoran mi participación.",
@@ -259,7 +259,7 @@ export const enContent: HomeContent = {
               tone: "assumption",
             },
             {
-              label: "Lo que sigue sin estar claro",
+              label: "Lo que aún no está claro",
               text: [
                 "Quién creó la lista de invitados.",
                 "Por qué no fui incluido.",
@@ -269,16 +269,16 @@ export const enContent: HomeContent = {
             },
           ],
           movementLabel: "Próximo movimiento responsable",
-          movement: "Buscar más contexto antes de concluir intención.",
+          movement: "Buscar más contexto antes de concluir que hubo intención.",
         },
         {
           id: "ai-prompt-transformation",
           order: "02",
           title: "Transformación de prompt para IA",
-          shortTitle: "Prompt IA",
+          shortTitle: "Prompt de IA",
           description:
-            "Observa cómo la IA recibe un marco antes de generar una acción, y cómo preservar la incertidumbre cambia la solicitud.",
-          inputLabel: "Marco inicial del prompt",
+            "Observa cómo la IA recibe un encuadre antes de generar una acción, y cómo preservar la incertidumbre cambia la solicitud.",
+          inputLabel: "Encuadre inicial del prompt",
           input: "Mi equipo ignoró mi propuesta. Escribe un correo para confrontarlos.",
           layers: [
             {
@@ -301,7 +301,7 @@ export const enContent: HomeContent = {
               annotation: "La incertidumbre sigue visible.",
             },
             {
-              label: "Lo que sigue sin estar claro",
+              label: "Lo que aún no está claro",
               text: [
                 "Por qué la propuesta no ha recibido respuesta.",
                 "Si el equipo la vio.",
@@ -335,7 +335,7 @@ export const enContent: HomeContent = {
               tone: "assumption",
             },
             {
-              label: "Lo que sigue sin estar claro",
+              label: "Lo que aún no está claro",
               text: "Por qué la idea no fue aceptada.",
               tone: "unclear",
             },
