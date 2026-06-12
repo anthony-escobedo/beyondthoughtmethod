@@ -52,11 +52,11 @@ export const ptBrContent: HomeContent = {
     ctas: [
       {
         label: "→ Explorar VIREKA Space",
-        href: "https://vireka.space",
+        href: "https://vireka.space/pt-br",
       },
       {
         label: "→ Ler a investigação de base",
-        href: "https://vireka.space/beyond-thought",
+        href: "https://vireka.space/pt-br/beyond-thought",
       },
     ],
   },
