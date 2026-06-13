@@ -44,7 +44,7 @@ export const esContent: HomeContent = {
   },
   hero: {
     ...enContent.hero,
-    eyebrow: "Beyond Thought Method",
+    eyebrow: "MÉTODO PARA LA INTERPRETACIÓN ANTES DE LA ACCIÓN",
     headline: "Infraestructura preinterpretativa",
     subheadline:
       "Un método para examinar la interpretación antes de que se convierta en acción.",

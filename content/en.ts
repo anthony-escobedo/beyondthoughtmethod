@@ -41,7 +41,7 @@ export const enContent: HomeContent = {
     ],
   },
   hero: {
-    eyebrow: "Beyond Thought Method",
+    eyebrow: "METHOD FOR INTERPRETATION BEFORE ACTION",
     headline: "Pre-Interpretive Infrastructure",
     subheadline: "A method for examining interpretation before it becomes action.",
     supportingLine:
